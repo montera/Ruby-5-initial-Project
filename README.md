@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# Ruby5initPrj
+My Initialization in Local Server Projects
+>>>>>>> d5660e84d67da9b8029a7559e27a9c7683a4da79
