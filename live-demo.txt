@@ -1,1 +1,4 @@
 https://rubyku-hello.herokuapp.com/
+
+in localhost
+http://rub12.com:88/
