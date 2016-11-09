@@ -2,7 +2,7 @@ require 'test_helper'
 
 class MicropostsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @micropost = microposts(:one)
+    @micropost = microposts(:orange)
   end
 
   test "should get index" do

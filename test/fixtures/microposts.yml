@@ -1,9 +1,35 @@
+# == Schema Information
+#
+# Table name: microposts
+#
+#  id         :integer          not null, primary key
+#  content    :text
+#  user_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  picture    :string
+#
+# Indexes
+#
+#  index_microposts_on_user_id                 (user_id)
+#  index_microposts_on_user_id_and_created_at  (user_id,created_at)
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  content: MyText
-  user_id: 1
+orange:
+  content: "I just ate an orange!"
+  user: michael
 
-two:
-  content: MyText
-  user_id: 1
+tau_manifesto:
+  content: "Check out the @tauday site by @mhartl: http://tauday.com"
+  user: michael
+
+cat_video:
+  content: "Sad cats are sad: http://youtu.be/PKffm2uI4dk"
+  user: michael
+
+most_recent:
+  content: "Writing a short test"
+  user: michael
+
