@@ -24,7 +24,7 @@
 
 michael:
   name: Michael Example
-  email: michael@example.com
+  email: MHARTL@example.COM
 
 archer:
   name: Sterling Archer
@@ -37,3 +37,4 @@ lana:
 mallory:
   name: Mallory Archer
   email: boss@example.gov
+

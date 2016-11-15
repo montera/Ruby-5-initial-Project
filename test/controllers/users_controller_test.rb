@@ -19,7 +19,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_difference('User.count') do
       # post users_url, params: { user: { email: @user.email, name: @user.name } }
       # add character 'a' passing unique validation
-      post users_url, params: { user: { email: 'a' + @user.email, name: @user.name } }
+      post users_url, params: { user: { email: 'a' + @user.email, name: @user.name, password: "foobar", password_confirmation: "foobar" } }
     end
 
     assert_redirected_to user_url(User.last)
@@ -36,7 +36,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update user" do
-    patch user_url(@user), params: { user: { email: @user.email, name: @user.name } }
+    patch user_url(@user), params: { user: { email: @user.email, name: @user.name, password: "foobar", password_confirmation: "foobar" } }
     assert_redirected_to user_url(@user)
   end
 
